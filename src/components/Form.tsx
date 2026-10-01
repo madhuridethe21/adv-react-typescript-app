@@ -8,7 +8,7 @@ import {
 type FormProps = ComponentPropsWithoutRef<"form"> & {
   onSave: (value: unknown) => void;
 }; //We get all the standard built in properties of form elemnt
-type FormHandle = {
+export type FormHandle = {
   clear: () => void;
 };
 const Form = forwardRef<FormHandle, FormProps >(function Form(

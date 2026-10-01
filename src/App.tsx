@@ -1,16 +1,18 @@
 import TimerContextProvider from "./store/TimersContext";
 import Header from "./components/Header";
-import Timer from "./components/Timer";
-import AddTimer from "./components/Addtimer";
+import Timers from "./components/Timers";
+import AddTimer from "./components/AddTimer";
 function App() {
   return (
-    <TimerContextProvider>
-      <Header />
-      <main>
-        <AddTimer />
-        <Timer />
-      </main>
-    </TimerContextProvider>
+    <div className="bg-gray-900 p-5 mx-auto w-full max-w-lg rounded-xl border shadow-sm">
+      <TimerContextProvider>
+        <Header />
+        <main>
+          <AddTimer />
+          <Timers />
+        </main>
+      </TimerContextProvider>
+    </div>
   );
 }
 
